@@ -76,13 +76,15 @@ SUMMARY.md, 注意缩进
         * [第 2 章 两个价值维度](/docs/part1/ch2.md)
 ```
 
-使用honkit搭建
+使用honkit搭建，如果安装honkit用-g，安装插件也必须加-g。
+
+示例是没有-g的写法
 
 ```bash
 npm install honkit
 
 # 安装插件，自己去https://npmjs.org/进行查找
-npm install -g \
+npm install \
         gitbook-plugin-toggle-chapters \
         gitbook-plugin-codeblock-filename \
         gitbook-plugin-splitter \
