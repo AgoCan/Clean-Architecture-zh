@@ -14,6 +14,8 @@
 
 book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会报错 。插件的功能，可以查看https://gitbook.zhangjikai.com/
 
+由于honkit的使用，不能使用插件"prism", "prism-themes", 所以就使用默认的highlight
+
 ```json
 {
   "title": "Clean-Architecture-zh",
@@ -29,7 +31,7 @@ book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会�
   },
 
   "plugins": [
-    "-highlight", 
+    "highlight", 
     "toggle-chapters", 
     "mermaid-fox",
     "codeblock-filename", 
@@ -38,8 +40,6 @@ book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会�
 	"-lunr", 
     "search-pro", 
     "theme-default", 
-    "prism", 
-    "prism-themes", 
     "theme-comscore",
 	"include", 
     "favicon", 
@@ -58,13 +58,8 @@ book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会�
     "search-pro": {
         "cutWordLib": "nodejieba",
         "defineWord" : ["Gitbook Use"]
-    },
-    "prism": {
-        "css": [
-            "prism-themes/themes/prism-ghcolors.css"
-        ]
     }
-    }
+}
 ```
 
 SUMMARY.md, 注意缩进
