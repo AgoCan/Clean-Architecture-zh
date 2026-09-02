@@ -10,7 +10,7 @@
 - SUMMARY.md：   侧边栏的目录索引
 - website.css：  自定义css
 
-## 文件，必须存在的两个文件
+## 文件，必须存在的两个文件，book.json和SUMMARY.md
 
 book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会报错 。插件的功能，可以查看https://gitbook.zhangjikai.com/
 
@@ -81,6 +81,9 @@ SUMMARY.md, 注意缩进
 示例是没有-g的写法
 
 ```bash
+# 配置 npm 使用阿里云镜像源
+npm config set registry https://registry.npmmirror.com
+
 npm install honkit
 
 # 安装插件，自己去https://npmjs.org/进行查找
