@@ -2,6 +2,14 @@
 
 > 这是一个简单的介绍，不会很详细
 
+## 简略写一下
+
+1. 创建 `book.json` 和 `SUMMARY.md` 文件
+2. 告诉AI： “请根据docs/content 整理一下SUMMARY.md。顶个是最外层的README.md,剩下都在下一层缩进”
+3. 执行 `npm install` 一个命令和一堆插件
+4. 执行命令 `honkit serve` 启动，就可以直接开发访问页面了
+
+## 下面比较详细
 
 创建5个文件：
 - book.json:     搭建环境的配置文件
