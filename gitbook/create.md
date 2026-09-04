@@ -29,44 +29,52 @@ book.json,代码的高亮必须正确，例如不能使用 "```vue" ,不然会�
   "title": "Clean-Architecture-zh",
   "keywords": "Keywords",
   "description": "Description",
-  "author":"hankbook",
+  "author": "hankbook",
   "language": "zh-hans",
-  "links" : {
-    "sidebar" : {}
+  "links": {
+    "sidebar": {}
   },
   "styles": {
     "website": "styles/website.css"
   },
-
   "plugins": [
-    "highlight", 
-    "toggle-chapters", 
     "mermaid-fox",
-    "codeblock-filename", 
-    "splitter", 
+    "highlight",
+    "toggle-chapters",
+    "codeblock-filename",
+    "splitter",
     "-search",
-	"-lunr", 
-    "search-pro", 
-    "theme-default", 
+    "-lunr",
+    "search-pro",
+    "theme-default",
     "theme-comscore",
-	"include", 
-    "favicon", 
-    "anchors", 
-    "tbfed-pagefooter", 
+    "include",
+    "favicon",
+    "anchors",
+    "tbfed-pagefooter",
     "hide-element"
   ],
+  "pluginsConfig": {
+    "highlight": {
+      "ignore": ["mermaid"]
+    },
+    "mermaid-fox": {
+      "zoom": true,
+      "download": true
+    },
     "hide-element": {
-            "elements": [".gitbook-link"]
-        },
+      "elements": [".gitbook-link"]
+    },
     "tbfed-pagefooter": {
-    "copyright":"Copyright &copy hankbook.cn 2020",
-    "modify_label": "该文件修订时间：",
-    "modify_format": "YYYY-MM-DD HH:mm:ss"
+      "copyright": "Copyright &copy hankbook.cn 2020",
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "search-pro": {
-        "cutWordLib": "nodejieba",
-        "defineWord" : ["Gitbook Use"]
+      "cutWordLib": "nodejieba",
+      "defineWord": ["Gitbook Use"]
     }
+  }
 }
 ```
 
